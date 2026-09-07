@@ -4,123 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Webpage</title>
-
-    <style>
-      body {
-        background-color: #f5f5f5;
-        font-family: Arial, sans-serif;
-        margin: 30px;
-      }
-
-      h1,
-      h2,
-      h3 {
-        color: #2d4059;
-      }
-
-      table {
-        border-collapse: collapse;
-        width: 70%;
-        margin-bottom: 20px;
-      }
-
-      th,
-      td {
-        border: 1px solid #333;
-        padding: 10px;
-        text-align: left;
-      }
-
-      form {
-        background: #ffffff;
-        padding: 20px;
-        width: 350px;
-        border-radius: 8px;
-      }
-    </style>
-
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="main-heading">Tulepbergen Zhanbolat</h1>
-    <h2>Course: Web Technologies 1</h2>
-    <h3>About Me</h3>
+    <div class="page-shell">
+      <header class="site-header">
+        <h1 id="main-heading">Tulepbergen Zhanbolat</h1>
+        <h2>Course: Web Technologies 1</h2>
+      </header>
 
-    <p style="color: blue;">
-      Hello! I am a student of AITU who enjoys learning new technologies. I am passionate about web design,
-      problem-solving, and improving my skills every day.
-    </p>
-
-    <h3>My Hobbies</h3>
-    <ol>
-      <li>Reading</li>
-      <li>Playing video games</li>
-      <li>Listening to music</li>
-      <li>Traveling</li>
-    </ol>
-
-    <h3>Favorite Websites</h3>
-    <ul>
-      <li><a href="https://www.google.com" target="_blank">Google</a></li>
-      <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
-    </ul>
-
-    <img src="https://cdn.theatlantic.com/thumbor/vDZCdxF7pRXmZIc5vpB4pFrWHKs=/559x0:2259x1700/1080x1080/media/img/mt/2017/06/shutterstock_319985324/original.jpg" alt="Cute cat" width="150" />
-    <br /><br />
-
-    <button type="button">Click Me</button>
-
-    <h3>Weekly Class Schedule</h3>
-    <table>
-      <tr>
-        <th>Subject</th>
-        <th>Day</th>
-        <th>Time</th>
-      </tr>
-      <tr>
-        <td>Web Technologies</td>
-        <td>Monday</td>
-        <td>9:00</td>
-      </tr>
-      <tr>
-        <td>Math</td>
-        <td>Wednesday</td>
-        <td>11:00</td>
-      </tr>
-      <tr>
-        <td>Gym</td>
-        <td>Friday</td>
-        <td>14:00</td>
-      </tr>
-    </table>
-
-    <h3>Layout Example</h3>
-    <table width="400px">
-      <tr>
-        <td width="30%">PIZZA PEPPERONI</td>
-        <td width="70%">
-          <p class="highlight">
-            A classic pepperoni pizza consists of dough, tomato sauce, cheese, and spicy pepperoni sausage.
+      <main class="main-content">
+        <section class="info-card">
+          <h3>About Me</h3>
+          <p class="intro-text">
+            Hello! I am a student of AITU who enjoys learning new technologies. I am passionate about web design,
+            problem-solving, and improving my skills every day.
           </p>
-        </td>
-      </tr>
-    </table>
+        </section>
 
-    <h3>Mood Today</h3>
-    <p class="highlight" id="mood">Today I feel cheerful and energetic 😊😄🌞</p>
+        <section class="info-card">
+          <h3>My Hobbies</h3>
+          <ol>
+            <li>Reading</li>
+            <li>Playing video games</li>
+            <li>Listening to music</li>
+            <li>Traveling</li>
+          </ol>
+        </section>
 
-    <h3>Contact Form</h3>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br /><br />
+        <section class="info-card">
+          <h3>Favorite Websites</h3>
+          <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+          </ul>
+        </section>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br /><br />
+        <section class="info-card profile-card">
+          <h3>Profile</h3>
+          <img
+            src="https://cdn.theatlantic.com/thumbor/vDZCdxF7pRXmZIc5vpB4pFrWHKs=/559x0:2259x1700/1080x1080/media/img/mt/2017/06/shutterstock_319985324/original.jpg"
+            alt="Cute cat"
+            class="profile-image"
+          />
+          <button type="button">Click Me</button>
+        </section>
 
-      <label for="color">Favorite Color:</label><br />
-      <input type="color" id="color" name="color" /><br /><br />
+        <section class="info-card">
+          <h3>Weekly Class Schedule</h3>
+          <table>
+            <tr>
+              <th>Subject</th>
+              <th>Day</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>Web Technologies</td>
+              <td>Monday</td>
+              <td>9:00</td>
+            </tr>
+            <tr>
+              <td>Math</td>
+              <td>Wednesday</td>
+              <td>11:00</td>
+            </tr>
+            <tr>
+              <td>Gym</td>
+              <td>Friday</td>
+              <td>14:00</td>
+            </tr>
+          </table>
+        </section>
 
-      <button type="submit">Submit</button>
-    </form>
+        <section class="info-card">
+          <h3>Layout Example</h3>
+          <table class="layout-table">
+            <tr>
+              <td class="label-cell">PIZZA PEPPERONI</td>
+              <td>
+                <p class="highlight">
+                  A classic pepperoni pizza consists of dough, tomato sauce, cheese, and spicy pepperoni sausage.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="info-card">
+          <h3>Mood Today</h3>
+          <p class="highlight" id="mood">Today I feel cheerful and energetic 😊😄🌞</p>
+        </section>
+
+        <section class="info-card form-card">
+          <h3>Contact Form</h3>
+          <form>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
+
+            <label for="color">Favorite Color:</label><br />
+            <input type="color" id="color" name="color" /><br /><br />
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+
+        <section class="position-demo">
+          <div class="static-box">Static box</div>
+          <div class="relative-box">Relative box</div>
+          <div class="absolute-box">Absolute box</div>
+        </section>
+
+        <section class="float-demo">
+          <div class="left-box">Left floated box</div>
+          <div class="right-box">Right floated box</div>
+          <div class="clear-box"></div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
